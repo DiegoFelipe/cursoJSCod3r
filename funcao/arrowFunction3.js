@@ -1,0 +1,1 @@
+let comparaComThis = function(param)

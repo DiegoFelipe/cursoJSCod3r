@@ -13,8 +13,9 @@ console.log(criarPessoa())
 
 function criarProduto(nome, preco) {
   return {
-    nome: nome,
-    preco: preco
+    nome, // nome: nome,
+    preco, // preco: preco 
+
   }
 }
 

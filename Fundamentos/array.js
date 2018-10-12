@@ -13,3 +13,6 @@ delete val[0]
 console.log(val)
 
 console.log(typeof val)
+
+
+console.log((ano_final - ano_inicial) * 360)

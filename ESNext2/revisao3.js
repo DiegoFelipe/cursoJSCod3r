@@ -2,8 +2,8 @@
 // Object.entries = pega todas as chaves e valores e colocar em um array
 
 const obj2 = { a: 1, b: 2, c:3 };
-//console.log(Object.values(obj2))
-//console.log(Object.entries(obj2))
+console.log(Object.values(obj2))
+console.log(Object.entries(obj2))
 console.log('asasd')
 
 // Melhorias na notação literal

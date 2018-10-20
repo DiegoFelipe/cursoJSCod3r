@@ -9,4 +9,3 @@ console.log(clone)
 const grupoA = ['Pedro','Tiago','João']
 const grupoFinal =['Maria',...grupoA,'Diego']
 console.log(grupoFinal)
- 

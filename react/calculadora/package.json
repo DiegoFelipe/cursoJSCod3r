@@ -1,7 +1,8 @@
 {
-  "name": "calculadora",
+  "name": "dfcalculadora",
   "version": "0.1.0",
-  "private": true,
+  "description": "A simple calculator",
+  "private": false,
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
@@ -12,6 +13,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "author": {
+    "name":  "Diego Felipe",
+    "email": "diegofelipe.14@gmail.com"
   },
   "eslintConfig": {
     "extends": "react-app"

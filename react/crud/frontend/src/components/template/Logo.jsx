@@ -3,8 +3,8 @@ import React from 'react'
 import logo from '../../assets/imgs/logo.png'
 
 export default props =>
-    <aside>
-        <a href="/" className="logo">
+    <aside className="logo">
+        <a href="/" >
           <img src={logo} alt="logo" />
         </a>
     </aside>

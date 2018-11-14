@@ -46,6 +46,36 @@ export default class UserCrud extends Component {
 		this.setState({ user })
 	}
 
+	renderForm() {
+		<div className="form">
+			<div className="row">
+				<div className="col-12 col-md-6">
+						<div className="form-group">
+							<label>Nome</label>
+						<input type="text" className="form-control"
+							name="name"
+							value={this.state.user.name}
+							onChange={e => this.updateField(e)}
+							placeholder="Digite o nome do usuário"
+						/>
+						</div>
+				</div>
+
+				<div className="col-12 col-md-6">
+					<div className="form-group">
+						<label>Email</label>
+					<input type="text" className="form-control"
+						name="email"
+						value={this.state.user.email}
+						onChange={e => this.updateField(e)}
+						placeholder="Digite o email do usuário"
+					/>
+					</div>
+				</div>
+			</div>
+		</div>
+	}
+
 	render() {
 		return (
 			<Main {...headerProps}>

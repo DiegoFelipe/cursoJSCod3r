@@ -47,6 +47,7 @@ export default class UserCrud extends Component {
 	}
 
 	renderForm() {
+	 return (
 		<div className="form">
 			<div className="row">
 				<div className="col-12 col-md-6">
@@ -77,21 +78,24 @@ export default class UserCrud extends Component {
 			<hr/>
 		<div className="row">
 			<div className="col-12 d-flex justify-content-end">
-				<button className="btn btn-primary">
+				<button className="btn btn-primary"
+								onClick={ e => this.save(e)}>
 					Salvar
 				</button>
-				<button className="btn btn-secondary ml-2">
-					Cancelar 
+				<button className="btn btn-secondary ml-2"
+								onClick={e => this.clear(e)}>
+					Cancelar
 				</button>
 			</div>
 		</div>
 		</div>
+	)
 	}
 
 	render() {
 		return (
 			<Main {...headerProps}>
-				Cadastro de Usuário
+				{this.renderForm()}
 			</Main>
 		)
 	}

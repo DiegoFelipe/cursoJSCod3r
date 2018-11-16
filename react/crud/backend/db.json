@@ -1,11 +1,19 @@
 {
-    "users": [{
-        "id": 1,
-        "name": "Arthur Oliveira",
-        "email": "aoliveira@asdasd.com.br"
-        }, {
-            "id": 2,
-            "name": "Diego Felipe",
-            "email": "diegofelipe.14@gmail.com"
-        }]
+  "users": [
+    {
+      "id": 1,
+      "name": "Arthur Oliveira",
+      "email": "aoliveira@asdasd.com.br"
+    },
+    {
+      "id": 2,
+      "name": "Diego Felipe",
+      "email": "diegofelipe.14@gmail.com"
+    },
+    {
+      "name": "patricia",
+      "email": "asdasdsad",
+      "id": 3
+    }
+  ]
 }

@@ -1,1 +1,1 @@
-Curso de JS da Cod3r
+Curso de JavaScript da Cod3r

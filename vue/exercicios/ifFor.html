@@ -15,6 +15,11 @@
         <span v-else-if="aluno.nota >= 3">Recuperação</span>
         <span v-else>Reprovado</span>
       </p>
+      <p>
+        <li v-for="n in 8" style="list-style: none">
+          <span v-show="n >=4">{{n}}</span>
+        </li>
+      </p>
     </div>
     <script>
       new Vue({

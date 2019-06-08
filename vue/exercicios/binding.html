@@ -7,9 +7,30 @@
     <script src="/js/vue.min.js"></script>
 </head>
 <body class="exercicio">
+    <div id="app">
+      <p><a href="{{ link }}">Não funciona</a></p>
+      <p><a v-bind:href="link">funciona</a></p>
+      <p><a :href="link">Também funciona</a></p>
 
+      <p>
+        <!--  2 way data bind -->
+        <input type="text" v-model="nome"><br>
+        <span>{{nome}}</span>
+      </p>
+    </div>
     <script>
-        // ...
+        new Vue({
+          el: "#app",
+          data: {
+            nome: "diego",
+            link: "https://www.youtube.com"
+          },
+          watch: {
+            nome(novoValor) {
+              console.log(novoValor.toUpperCase())
+            }
+          }
+        })
     </script>
 </body>
 </html>

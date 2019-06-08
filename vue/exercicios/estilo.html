@@ -9,12 +9,29 @@
         .vermelho {
             background-color: red;
         }
+
+        .italic {
+          font-style:italic;
+        }
     </style>
 </head>
 <body class="exercicio">
+    <div id="app" @click="aplicaCor = !aplicaCor">
+        <div class="head" :class="{vermelho: aplicaCor}">
+          TEXTO 1
+        </div>
 
+        <div class="sub" :class="{italic: !aplicaCor}">
+          TEXTO 2
+        </div>
+    </div>
     <script>
-        // ...
+        new Vue({
+          el: "#app",
+          data: {
+            aplicaCor: false
+          }
+        })
     </script>
 </body>
 </html>
